@@ -32,6 +32,10 @@ from ..frequency import Frequency
 from ..media import Media, DefinedGammaZ0
 from .. import mathFunctions as mf
 
+try:
+    xrange
+except NameError:
+    xrange = range
 
 class Touchstone:
     """
